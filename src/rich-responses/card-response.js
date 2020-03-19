@@ -75,7 +75,7 @@ class Card extends RichResponse {
       this.imageUrl = card.imageUrl;
 
       this.buttonText1 = card.buttonText1;
-      this.buttonUrl1 = card.buttonUrl1;
+      //this.buttonUrl1 = card.buttonUrl1;
 
       this.buttonText2 = card.buttonText2;
       this.buttonUrl2 = card.buttonUrl2;
