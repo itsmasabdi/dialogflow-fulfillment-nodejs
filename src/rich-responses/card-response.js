@@ -75,7 +75,7 @@ class Card extends RichResponse {
       this.imageUrl = card.imageUrl;
 
       this.buttonText1 = card.buttonText1;
-      //this.buttonUrl1 = card.buttonUrl1;
+      this.buttonUrl1 = card.buttonUrl1;
 
       this.buttonText2 = card.buttonText2;
       this.buttonUrl2 = card.buttonUrl2;
@@ -254,6 +254,7 @@ class Card extends RichResponse {
       if (this.buttonText1 && this.buttonUrl1) {
         response.card.buttons[0] = {};
         response.card.buttons[0].text = this.buttonText1;
+        response.card.buttons[0].postback = this.buttonText1;
         //response.card.buttons[0].postback = this.buttonUrl1;
       }
       if (this.buttonText2 && this.buttonUrl2) {
@@ -326,6 +327,7 @@ class Card extends RichResponse {
       if (this.buttonText1 && this.buttonUrl1) {
         response.card.buttons[0] = {};
         response.card.buttons[0].text = this.buttonText1;
+        response.card.buttons[0].postback = this.buttonText1;
         // response.card.buttons[0].postback = this.buttonUrl1;
       }
       if (this.buttonText2 && this.buttonUrl2) {
