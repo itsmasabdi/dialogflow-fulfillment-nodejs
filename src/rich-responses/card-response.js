@@ -254,7 +254,7 @@ class Card extends RichResponse {
       if (this.buttonText1 && this.buttonUrl1) {
         response.card.buttons[0] = {};
         response.card.buttons[0].text = this.buttonText1;
-        response.card.buttons[0].postback = this.buttonUrl1;
+        //response.card.buttons[0].postback = this.buttonUrl1;
       }
       if (this.buttonText2 && this.buttonUrl2) {
         response.card.buttons[1] = {};
